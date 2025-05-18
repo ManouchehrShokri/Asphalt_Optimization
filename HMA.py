@@ -40,7 +40,7 @@ for _ in range(num_repeats):
         "Lignite": 0.207,
         "Coal": 0.206,
         "Oil": 0.097,
-        "Green Hydrogen": 0.0,
+        "Green Hydrogen": 0.02,
         "Natural Gas": 0.0817
     }
 
@@ -195,7 +195,7 @@ for _ in range(num_repeats):
                 total_fuel_GWP += (fuel_GWP[fuel] * energy_consumed)  
 
             
-            GWP = total_fuel_GWP + transport_GWP + (bitumen * 340) + (sand * 1000 * 0.00205) + (gravel * 1000 * 0.00204) + (lime * 1000 * 0.00466)
+            GWP = total_fuel_GWP + transport_GWP + (bitumen * 340) + (sand * 1000 * 0.00205) + (gravel * 1000 * 0.00204) + (lime * 1000 * 0.00466) + (electricity_consumption * 0.5)
 
            
             
